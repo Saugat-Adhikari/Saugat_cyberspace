@@ -1,4 +1,6 @@
 // QN. 2) to display the area of a triangle.
+	#include<stdio.h>
+        int main(){
 
 	int height, base, _area; // _area chai area ko formula rakhna ko lagi variable banayako
 	printf("   Enter height and base of a triangle : ");
@@ -6,3 +8,6 @@
 	scanf("%d%d", &height, &base);
 	_area = (height * base) / 2;
 	printf(">> The area of a triangle is %d m^2.", _area);
+	
+	return 0;
+	}
