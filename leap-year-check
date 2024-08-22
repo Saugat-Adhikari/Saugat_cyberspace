@@ -1,0 +1,20 @@
+# include<stdio.h>
+int main()
+{
+// to know whether the year is leap year or not.
+// logic : kunai pani year lai 4 lay  divide garda 0 remainder aayo vanya 
+// year % 4 == 0
+
+	int year;
+	printf(" >> Enter the year : ");
+	scanf("%d", &year);
+	if (year % 4 == 0)
+	{
+		printf(" >> %d is a leap year.\n\n\n", year);
+	}
+	else
+	{
+		printf(" >> %d is not a leap year.\n\n\n", year);
+	}
+	return 0;
+}
