@@ -1,0 +1,19 @@
+
+# include<stdio.h>
+int main()
+{	// QN. 4)  program to input two number and find the sum ,difference , product and division.
+
+	int X, Y;
+	printf(">>> give any two number, you will get the addition , subtraction , multiplication and division of the numbers --> ");
+	scanf(" %d%d", &X, &Y);
+
+	printf(">>> the sum of %d and %d is --> %d\n", X, Y, X + Y);
+
+	printf(">>> the subtraction of %d and %d is --> %d\n", X, Y, X - Y);
+
+	printf(">>> the multiplication of %d and %d is --> %d\n", X, Y, X * Y);
+
+	printf(">>> the division of %d and %d is --> %d\n\n", X, Y, X / Y);
+
+	return 0;
+}
