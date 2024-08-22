@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	// wap to display the greatest number among three different integer numbers.  
+	int x,y,z;
+	printf(" enter x,y,z : ");
+	scanf("%d%d%d",&x,&y,&z);
+	if(x>y&&x>z){
+		printf(" x is greatest among three \n %d is greatest .",x);
+	}else if(y>x&&y>z){
+		printf("y is greatest among three \n %d is greatest . ",y);
+	}else{
+		printf("z is greatest among three \n %d is greatest .",z);
+	}
+	return 0;
+}
