@@ -1,0 +1,12 @@
+# include<stdio.h>
+int main()
+{
+	// give the letter and get the ascii value of it.
+  // capital A diyo vanya ans -> 65 aauna paryo.
+	char alpha;  // because A is a character 
+	printf("   Enter the characert that you want the ascii number : ");
+	scanf("%c", &alpha);
+	printf(" >> the number of the inputed character is : %d\n\n\n", alpha); // %d because we want the number of that character we inputed.
+
+	return 0;
+}
