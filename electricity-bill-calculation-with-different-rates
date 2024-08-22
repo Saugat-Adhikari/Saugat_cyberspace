@@ -1,0 +1,27 @@
+
+// electricity bill----------
+// 0-20 unit   =rs 5/uni
+// 21-70 unit  10/unit
+// 71-above  13/unit
+ 
+#include <stdio.h>
+ int main()
+{
+     int unit;
+     printf(" enter the unit you consumed : ");
+     scanf("%d", &unit);
+     if (unit <= 20)
+     {
+         printf(" your electricity price is : %d", unit * 5);
+     }
+     else if (unit >= 21 && unit <= 70)  // && lay sabai condition true vaya pachi matra statement read garxa.
+     {
+         printf(" your electricity price is : %d", unit * 10);
+     }
+     else
+     {
+         printf(" your electricity price is : %d", unit * 13);
+    }
+
+    return 0;
+}
