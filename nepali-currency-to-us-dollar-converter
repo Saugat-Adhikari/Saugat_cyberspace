@@ -1,0 +1,11 @@
+# include<stdio.h>
+int main()
+{
+	 //npr to dollar currency converter
+ float npr,dlr;  // currency convert garda decimal ne huna sakxa tei vayera float use garako 
+     printf(" enter amount of currency (in NPR ) : ");
+     scanf("%f",&npr);
+     dlr = npr/135.5;
+     printf("---> $.%.2f ",dlr); // ---> $.3435.45 yesto output aaauxa hai 
+	return 0;
+}
