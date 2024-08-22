@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+ int main()
+{
+      // input 2 number and give  options (add,sub,mul,div) and perform the operation.
+ #include <stdio.h>
+ int main()
+ {
+     int a, b, operation_number;
+     printf(" \nEnter 1st number : ");
+     scanf("%d", &a);
+     printf(" Enter 2nd number : ");
+     scanf("%d", &b);
+     printf("\n what operation you would like to perform : \n 1.ADD\n 2.SUB\n 3.MUL\n 4.DIV\n \nEnter the operation number : \n");
+     scanf("%d", &operation_number);
+     if (operation_number == 1)
+     {
+         printf(" You have choosed ADD operation .\n--> a + b = %d ", a + b);
+     }
+     else if (operation_number == 2)
+     {
+         printf(" You have choosed SUB operation .\n--> a - b = %d ", a - b);
+     }
+     else if (operation_number == 3)
+     {
+         printf(" You have choosed MUL operation .\n--> a * b = %d ", a * b);
+     }
+     else
+     {
+         printf(" You have choosed DIV operation .\n--> a / b = %d ", a / b);
+     }
+
+
+
+    return 0;
+}
