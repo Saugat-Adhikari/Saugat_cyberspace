@@ -1,0 +1,26 @@
+
+# include<stdio.h>
+int main()
+{
+	// WAP TO CHECK WHETHER THE NUMBER IS THE MULTIPLE OF 5 OR NOT.
+  // note : j ko multiple chaiyo tei lay % number garni , jastai , 7 ko multiple ko lagi   a % 7 == 0 (condition)
+
+	printf(" \t\t \n\n To check whether the number is the multiple of 5 or not .\n");
+
+	int a;
+	printf("\t Enter a number : ");
+	scanf("%d", &a);
+	if (a % 5 == 0) // yedi user lay diyako number lai 5 lay div garda remainder 0 hunxa vanya tyo 5 ko multiple ho 
+                  // jastai 10 div 5 = quotient (2) remainder (0),, perfect division hunxa
+	{
+		printf("the number is the multiple of 5\n\n\n");
+	}
+// hya else garera sidai garako vaya ramro hunthyo , yesto ne garna milxa vanera garako yo chai 
+	else if (a % 5 != 0)
+	{
+		printf(">> the number is not the multiple of 5 \n\n\n");
+	}
+
+
+	return 0;
+}
