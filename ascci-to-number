@@ -7,6 +7,6 @@ int main()
 	printf("   Enter the characert that you want the ascii number : ");
 	scanf("%c", &alpha);
 	printf(" >> the number of the inputed character is : %d\n\n\n", alpha); // %d because we want the number of that character we inputed.
-
+// line no 8 ma %d ra line no 9 ma %c garyo vanya ,, number input dida letter output aauxa ,, jastai >> 65 input >> A output.
 	return 0;
 }
