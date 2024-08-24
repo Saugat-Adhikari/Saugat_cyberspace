@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+char alpha;
+
+// printing the multiplication table of any inputwed number .
+int num,i;
+printf(" enter a number : "); // let the number be 2
+scanf(" %d",&num);
+for ( i = 1; i <= 10; i++)
+{
+    printf(" %d x %d = %d \n",num,i,num*i);// 2 x 1 = 2
+                                           // 2 x 2 = 2  etc to 2 x 10 = 20
+                                           // because i goes from 1 to 10
+}
+
+       return 0;
+}
