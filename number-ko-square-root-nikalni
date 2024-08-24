@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>// square root nikalna ko lagi sqrt(name where the number is stored) function use garna .
+int main(){
+   //  find the square root of the inputed number .
+   int num;
+   printf(" enter a number : ");
+   scanf("%d",&num);  // 16 ko sqrt nikalna xa , 16 ta int ho tesai lay %d 
+   printf(" the squareroot of the given number is :  %lf", sqrt(num));
+// note : input integer xa , scanf lay int nai liyako xa vanya ,,
+//        printf ma ne %d nai garna parxa vanni hunna 
+//        aafu lai jasto chaiyako xa testo format specifier(%d,%f,%lf) use garni 
+
+    return 0;
+}
