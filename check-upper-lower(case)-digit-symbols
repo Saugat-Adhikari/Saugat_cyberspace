@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<ctype.h> // ascii use garna pardaina 
+int main(){
+   //  check whether the inputed number is a uppercse ,lowercase , digit or other special symbols.
+   char name;
+   printf(" enter a character : ");
+   scanf("%c",&name);
+   if (isupper(name))
+   {
+    printf(" this is a upper case");
+   }else if (islower(name))
+   {
+    printf(" this is a lowercase");
+   }else if(isdigit(name))
+   {
+    printf(" this is a digit");
+   }else 
+   {
+    printf(" special character or symbols");
+   }
+       return 0;
+}
