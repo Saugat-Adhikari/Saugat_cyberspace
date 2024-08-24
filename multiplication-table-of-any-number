@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-char alpha;
+
 
 // printing the multiplication table of any inputwed number .
 int num,i;
