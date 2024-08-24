@@ -1,0 +1,44 @@
+// comment lai del garera jun loop chainxa tei use garya hunxa
+
+/*
+
+ #include <stdio.h>
+int main()
+{
+    // sum of the digits
+    int num = 123, rem, rev = 0;
+    int ori = num;
+    for (num = 123; num != 0; num-rev)
+    {
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num /= 10;
+    }
+    printf(" the reverse of %d is %d ", ori, rev);
+
+    return 0;
+}
+
+
+*/
+
+
+//from while loop
+
+#include <stdio.h>
+int main()
+{
+    // sum of the digits
+    int num = 123, rem,ori=num,rev = 0;
+  
+while(num!=0){
+rem = num % 10;
+        rev = rev * 10 + rem;
+        num /= 10;
+}
+
+printf(" the reverse of %d is %d ", ori, rev);
+
+    return 0;
+}
+
