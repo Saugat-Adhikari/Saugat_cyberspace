@@ -1,0 +1,18 @@
+
+ #include <stdio.h>
+int main()
+{
+    // sum of the digits
+    int  num = 1234,rem,ori = num , sum = 0;
+     
+    for ( num = 1234; num != 0; num-sum)
+    {
+        rem = num % 10;
+        sum = sum  + rem;
+        num /= 10;
+    }
+    
+    printf(" the sum of %d is %d ", ori,sum );
+
+    return 0;
+}
