@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+   int num= 5;
+if (num%2==0) // 5 / 2 =  quotient(4) remainder (1) , remainder != '0' so odd print huna paryo
+{
+    printf(" %d is a even number .",num);
+}else
+{
+    printf(" %d is a odd number .",num);
+}
+
+       return 0;
+}
