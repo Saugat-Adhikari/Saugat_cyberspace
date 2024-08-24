@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int i, a = 0, b = 1, c;
+    for (i = 0; i < 2; i++)
+    {
+        printf("\t%d", i);
+    }
+    for (i = 1; i < 7; i++)
+    {
+        c = a + b;   // paila ko b ra aailay ko c lai a ra b banayera c nikalako.
+        printf("\t%d", c);
+        a = b; // paila ko b aaba ko lagi a
+        b = c;  // aailay ko c aaba ko lagi b
+    }
+
+    return 0;
+}
+
+
+/* 0       1       1       2       3       5       8       13
+
+line no 7 ma 0 ra 1 print vayo   0       1
+
+baki series tallo loop ma print vayo    1       2       3       5       8       13
+
+*/
