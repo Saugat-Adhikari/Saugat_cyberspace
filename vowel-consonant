@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+char alpha;
+printf(" enter a alphabet (in lowercase) : ");
+scanf(" %c",&alpha);
+if (alpha=='a'||alpha=='e'||alpha=='i'||alpha=='o'||alpha=='u' )  // kunai 1 ta condition milyo vanya if ko statement run hunxa ,, ghari ghari if , else if lagauna pardaina  
+{
+    printf("%c is a vowel letter .",alpha);
+}else
+{
+    printf("%c is a consonant letter .",alpha);
+}
+       return 0;
+}
