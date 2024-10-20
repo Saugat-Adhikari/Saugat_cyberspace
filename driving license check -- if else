@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <string.h> // For strcmp >> valid_driving_license == "yes" garera string lai compare garna milxa
+                    //             >> 'yes' is string lai siddai == lay compare garna mildaina ,, int haru lai milxa
+                    //             >> age == 18 >>ok , male == "yes " >>not ok without strcmp
+                    //   syntax -->> if (strcmp(name_of_variable ,"value_of_user_input")==0)
+                    // example       if (strcmp(citizenship_status ,"citizen")==0)
+int main()
+{
+    int age_of_user;                                                                // for storing age from user
+    char citizenship_status[10], valid_driving_license[5], home_country_license[5]; // for storing citizenship_status , valid_driving_license and home_country_license of the user
+    printf("==============CHECKING THE DRIVING LICENSE==============\n");
+    printf(" Enter your age : "); // getting age from user
+    scanf("%d", &age_of_user);    // storing age of user
+
+    if (age_of_user >= 18) // is age  18 ?
+    {
+        printf(" what is your citizenship status (citizen / non-citizen) : "); // ask citizen or not
+        scanf("%s", &citizenship_status);                                      // storing citizenship_status
+        if (strcmp(citizenship_status, "citizen") == 0)                        // if citizen
+        {
+            printf(" Do you have a Valid Driving license (yes/no): "); // ask have a Valid Driving license to user
+            scanf("%s", &valid_driving_license);                       // storing valid_driving_license info of user
+            if (strcmp(valid_driving_license, "yes") == 0)             // if valid driving license
+            {
+
+                if (age_of_user >= 18 && age_of_user <= 60) // if age is between (18 - 60 )include 60 and 18 both age
+                {
+                    printf(" You are elligeble to drive .\n");
+                }
+                else
+                {
+                    printf(" You are elligeble to drive, but please check for you renewal (60+ ).\n"); // if age is 60+
+                }
+            }
+            else
+            {
+                //  no valid driving license
+                printf(" You need a valid driving license to drive .\n");
+            }
+        }
+        else // if user is  not the  citizen of the nation
+        {
+            printf(" Do  you have license in your home country ?(yes / no) : "); // ask user have license in his country
+            scanf("%s", &home_country_license);                                  // storing home_country_license info of the user
+            if (strcmp(home_country_license, "yes") == 0)                        // have driving license form home country
+            {
+                printf(" You can drive with your home driving license .\n");
+            }
+            else // if user dont have driving license form home country
+            {
+                printf(" !!!!!!!! You need an international or local driving license to drive.\n");
+            }
+        }
+    }
+    else // if user is not 18 yet
+    {
+        printf(" You are too young to drive .\n");
+    }
+
+    return 0;
+}
