@@ -1,0 +1,46 @@
+#include <stdio.h>
+void ascending_to_descending(int arr[],int n);
+void descending_to_ascending(int arr[],int n);
+int main() {
+    // bubble sort
+    int arr[]={5,7,4,3,2};
+    int arr_new[]={3,6,1,0};
+    ascending_to_descending(arr,5);
+    descending_to_ascending(arr_new,4);
+    return 0;
+}
+// function for bubble sort
+//ascending_to_descending
+void ascending_to_descending(int arr[],int n){
+    int i,j,temp;
+    for( i= 0; i<n;i++){
+        for(j =0 ; j<n-1;j++){
+            if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    for(i= 0; i<n;i++){
+        printf(" %d ",arr[i]);
+    }
+    printf("\n\n");
+}
+//descending_to_ascending
+void descending_to_ascending(int arr[],int n){
+    int i,j,temp;
+    for( i= 0; i<n;i++){
+        for(j =0 ; j<n-1;j++){
+            if(arr[j]<arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    for(i= 0; i<n;i++){
+        printf(" %d ",arr[i]);
+    }
+    printf("\n\n");
+}
